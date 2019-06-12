@@ -536,6 +536,11 @@ li:nth-child(12) {
     border-radius: 1.5rem;
   }
 
+  .btn#alarm{
+    font-size:3rem;
+    padding:1.273rem 3rem 1.273rem 3rem;
+  }
+
   li {
     font-size: 3.8rem;
   }
