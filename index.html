@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Time Timer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" href="apple-icon-57x57.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body ontouchstart="">
+  <audio src="bgm.mp3" id="audio"></audio>
+  <div class="clock">
+    <div class="outer-clock-face">
+      <div class="marking thin marking-1"></div>
+      <div class="marking thin marking-2"></div>
+      <div class="marking thin marking-3"></div>
+      <div class="marking thin marking-4"></div>
+      <div class="marking thick marking-5"></div>
+      <div class="marking thin marking-6"></div>
+      <div class="marking thin marking-7"></div>
+      <div class="marking thin marking-8"></div>
+      <div class="marking thin marking-9"></div>
+      <div class="marking thick marking-10"></div>
+      <div class="marking thin marking-11"></div>
+      <div class="marking thin marking-12"></div>
+      <div class="marking thin marking-13"></div>
+      <div class="marking thin marking-14"></div>
+      <div class="marking thick marking-15"></div>
+      <div class="marking thin marking-16"></div>
+      <div class="marking thin marking-17"></div>
+      <div class="marking thin marking-18"></div>
+      <div class="marking thin marking-19"></div>
+      <div class="marking thick marking-20"></div>
+      <div class="marking thin marking-21"></div>
+      <div class="marking thin marking-22"></div>
+      <div class="marking thin marking-23"></div>
+      <div class="marking thin marking-24"></div>
+      <div class="marking thick marking-25"></div>
+      <div class="marking thin marking-26"></div>
+      <div class="marking thin marking-27"></div>
+      <div class="marking thin marking-28"></div>
+      <div class="marking thin marking-29"></div>
+      <div class="marking thick marking-30"></div>
+
+      <ul>
+          <li>0</li>
+          <li>55</li>
+          <li>50</li>
+          <li>45</li>
+          <li>40</li>
+          <li>35</li>
+          <li>30</li>    
+          <li>25</li>    
+          <li>20</li>    
+          <li>15</li>      
+          <li>10</li>    
+          <li>5</li>
+      </ul>
+
+      <div class="inner-clock-face" id="setTime">
+        <div class="hand-circle" id="center"></div>
+        <div class="hand-circle-bg"></div>
+        <div class="hand">
+            <div class="hand-triangle"></div>
+        </div>
+        <div class="hand-bg">
+          <div class="hand-triangle-bg"></div>
+        </div>
+        <div class="inner-face large"></div>
+        <div class="inner-face small"></div>
+        <div class="wrapper1">
+            <div class="spinner pie"></div>
+            <div class="filler pie"></div>
+        </div>
+        <div class="wrapper2">
+            <div class="mask"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn" id="start" href="#start">Start</a>
+  <a class="btn" id="pause" href="#pause" style="display:none">Pause</a>
+  <a class="btn" id="reset" href="#reset" style="display:none">Reset</a>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
