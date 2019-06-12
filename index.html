@@ -19,7 +19,7 @@
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body >
   <audio src="bgm.mp3" id="audio"></audio>
   <div class="clock">
     <div class="outer-clock-face">
@@ -90,10 +90,12 @@
       </div>
     </div>
   </div>
-  <a class="btn" id="start">Start</a>
-  <a class="btn" id="pause" style="display:none">Pause</a>
-  <a class="btn" id="reset" style="display:none">Reset</a>
-  <a class="btn" id="alarm">🔇</a>
+  <div ontouchstart="">
+    <a class="btn" id="start">Start</a>
+    <a class="btn" id="pause" style="display:none">Pause</a>
+    <a class="btn" id="reset" style="display:none">Reset</a>
+    <a class="btn" id="alarm">🔇</a>
+  </div>
   <script src="js/index.js"></script>
 </body>
 
