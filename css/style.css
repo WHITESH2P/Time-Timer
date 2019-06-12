@@ -439,6 +439,10 @@ li:nth-child(12) {
   border-right: none;
   transform-origin: 100% 50%;
   top: 0.05%;
+  opacity: 0;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  transform: rotate(-180deg)
 }
 
 .filler {

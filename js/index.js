@@ -28,16 +28,18 @@ setTime.addEventListener("click", function (e) {
   mouse_x = e.clientX;
   mouse_y = e.clientY;
   
-  if (time_flag === false)
-    getAngleDeg()
+  if (time_flag === false) {
+    getAngleDeg();
+  }
 }, false);
 
 setTime.addEventListener('touchstart', function(e) {
   mouse_x = e.touches[0].clientX;
   mouse_y = e.touches[0].clientY;
   
-  if (time_flag === false)
-    getAngleDeg()
+  if (time_flag === false) {
+    getAngleDeg();
+  }
 }, false);
 
 
@@ -62,9 +64,11 @@ function setDate() {
   if (angleDeg_ < -360) {
     filler.style.opacity = 100;
     mask.style.opacity = 0;
+    spinner.style.opacity = 100;
   } else {
     filler.style.opacity = 0;
     mask.style.opacity = 100;
+    spinner.style.opacity = 100;
   }
 
   spinner.style.transform = `rotate(${angleDeg_}deg)`;
@@ -73,7 +77,7 @@ function setDate() {
   hand_bg.style.transform = `rotate(${handDeg}deg)`;
 }
 
-setInterval(setDate, 1000);
+setInterval(setDate, 50);
 setDate();
 
 var pauseTime = document.getElementById("pause");
