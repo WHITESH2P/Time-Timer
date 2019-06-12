@@ -56,7 +56,9 @@ function setDate() {
       angleDeg_ = -180;
       angleDeg = 0;
       time_flag = false;
-      audio.play();
+      if (alarm.value == "on") {
+        audio.play();
+      }
       StateInit();
     }
   }
@@ -106,6 +108,18 @@ var resetTime = document.getElementById("reset");
 resetTime.addEventListener("click", function (e) {
   StateInit();
 }, false);
+
+var alarm = document.getElementById("alarm");
+alarm.addEventListener("click", function (e) {
+  if (alarm.value == "on") {
+    alarm.value = "off";
+    alarm.innerHTML = '🔇';
+  } else {
+    alarm.value = "on";
+    alarm.innerHTML = '🎵';
+  }
+}, false);
+
 
 function StateInit() {
   startTime.style.display = 'inline-block';

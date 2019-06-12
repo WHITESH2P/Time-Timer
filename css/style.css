@@ -505,6 +505,13 @@ li:nth-child(12) {
 .btn#reset:active {
   border-bottom:0.2rem solid #c1370e;
 }
+.btn#alarm{
+  background-color: #ff521e;
+  border-bottom:0.7rem solid #c1370e;
+}
+.btn#alarm:active {
+  border-bottom:0.2rem solid #c1370e;
+}
 
 @media (orientation:landscape) {
   body {
